@@ -8,6 +8,10 @@ import SidebarLayout from "@/layout/SidebarLayout.vue";
 </template>
 
 <style>
+body {
+  margin: 0;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
