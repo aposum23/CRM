@@ -1,12 +1,16 @@
 <script setup>
-
+import { defineProps } from 'vue';
 import HeaderGroup from "@/components/table/HeaderGroup.vue";
+
+defineProps([
+    'filterStructure',
+]);
 </script>
 
 <template>
-  <div class="table-container">
-    <HeaderGroup />
-  </div>
+  <Transition class="table-container">
+    <HeaderGroup :filter-structure="filterStructure"/>
+  </Transition>
 </template>
 
 <style scoped>
