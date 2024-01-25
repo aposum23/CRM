@@ -19,5 +19,14 @@ const goToPage = (pageRoute) => {
 </template>
 
 <style scoped>
+.menu-button p {
+  padding: 0 0 0 2rem;
+  margin: 0;
+}
 
+.menu-button:hover {
+  cursor: pointer;
+  border: 1px solid #3d9b76;
+  border-radius: 16px;
+}
 </style>

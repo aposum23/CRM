@@ -14,7 +14,7 @@ const isNewMenuGroup = (menuItem) => {
 
 <template>
   <div class="sidebar">
-    <template v-for="menuItem in MENU_STRUCTURE">
+    <template v-for="menuItem in MENU_STRUCTURE" :key="menuItem.label">
       <div class="sidebar__group-title" v-if="isNewMenuGroup(menuItem)">
         <p>{{menuItem.group}}</p>
       </div>
@@ -29,5 +29,9 @@ const isNewMenuGroup = (menuItem) => {
     height: 100vh;
     border: 1px solid rgba(0, 0, 0, 0);
     transition: 100ms ease-in;
+  }
+  .sidebar__group-title p {
+    color: #3d9b76;
+    font-weight: bold;
   }
 </style>
